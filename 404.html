@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Page not found — Sofiane Afir</title>
+<meta name="robots" content="noindex">
+<link rel="icon" href="/favicon.svg" type="image/svg+xml">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=Public+Sans:wght@400;600&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="/styles.css">
+<style>
+  .nf { max-width: var(--wrap); margin: 0 auto; padding: 6rem 1.5rem; }
+  .nf .code { font: 400 .95rem var(--mono); color: var(--muted); margin: 0 0 1rem; }
+  .nf h1 { margin-bottom: 1rem; }
+  .nf p { max-width: 44ch; color: var(--muted); margin: 0 0 2rem; }
+  @media (max-width: 640px) { .nf { padding: 4rem 1rem; } }
+</style>
+</head>
+<body>
+<main class="nf">
+  <p class="code">GET <span id="path">this page</span> → 404</p>
+  <h1>Nothing here</h1>
+  <p>This page doesn't exist or has moved. Everything about me is on the home page.</p>
+  <ul class="links">
+    <li><a class="btn primary" href="/">Go to the home page</a></li>
+    <li><a class="btn" href="mailto:sofiane_afir@live.fr">Email me</a></li>
+  </ul>
+</main>
+<script>
+  try { document.getElementById("path").textContent = decodeURIComponent(location.pathname).slice(0, 60); } catch (e) {}
+</script>
+</body>
+</html>

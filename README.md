@@ -4,4 +4,4 @@ Personal site of Sofiane Afir, software engineer. Plain HTML, CSS and a little J
 
 - `index.html` — content
 - `styles.css` — styles, light and dark
-- `trace.js` — lays out the career timeline in the hero
+- `site.js` — lays out the career timeline in the hero

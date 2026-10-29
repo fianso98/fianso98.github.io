@@ -40,3 +40,20 @@
     }
   }
 })();
+
+// Copy-email button: only shown when the Clipboard API is available.
+(function () {
+  var btn = document.querySelector(".copy");
+  if (!btn || !navigator.clipboard) return;
+  var status = document.querySelector(".copied");
+  btn.hidden = false;
+  btn.addEventListener("click", function () {
+    navigator.clipboard.writeText(btn.dataset.copy).then(function () {
+      btn.textContent = "Copied";
+      status.textContent = "Email address copied to clipboard";
+      setTimeout(function () { btn.textContent = "Copy email"; status.textContent = ""; }, 2000);
+    }, function () {
+      status.textContent = "Couldn't copy. Select the address and copy it manually.";
+    });
+  });
+})();

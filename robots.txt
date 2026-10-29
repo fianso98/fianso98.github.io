@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://fianso98.github.io/sitemap.xml
